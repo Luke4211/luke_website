@@ -1,0 +1,44 @@
+.sidebar_item {    
+    display: block;
+   	width: 150px;	
+ 
+}
+ 
+nav ul  {
+	list-style-type: none;
+    margin: 0;
+    padding:0;
+    width: 150px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border:black;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li a:hover {
+    background-color: #555;
+    color:white;
+}
+
+ul:last-child {
+    border-bottom: none;
+  }
+ 
+h1{
+	 padding-left: 300px;
+	 text-decoration: none;
+	 color: white;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+  }
