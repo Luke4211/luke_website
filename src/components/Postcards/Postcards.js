@@ -41,8 +41,8 @@ const Postcards = () => {
                     </Card.Body>
 
                 </Card>
-                <br/>
-                {/*<hr/>*/}
+                
+                <hr className="postcard_divider"/>
             </>
 
         )

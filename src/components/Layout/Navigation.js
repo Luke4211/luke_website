@@ -1,11 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
+import './Navigation.css'
  
 const Navigation = () => {
     return (
-        <Nav defaultActiveKey="/" className="flex_column">
-            <Nav.Link href="/">Active</Nav.Link>
+        <Nav defaultActiveKey="/" className="nav_bar">
+            <Nav.Link href="/" className="nav_item">Home</Nav.Link>
+            <Nav.Link href="/technology" className="nav_item">Tech</Nav.Link>
+            <Nav.Link href="/entertainment" className="nav_item">Entertainment</Nav.Link>
 
 
         </Nav>

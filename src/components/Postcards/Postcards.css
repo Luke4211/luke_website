@@ -4,6 +4,12 @@
     height: 200px;
     max-height: 200px;
     overflow: hidden;
+    
+}
+
+.postcard_divider {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .text {
@@ -21,7 +27,9 @@
 
 
 .postcards {
-    border: none;
+    border: 0px !important;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
