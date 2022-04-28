@@ -6,8 +6,8 @@ const Postcards = () => {
     //TODO: Add props to function parameters, remove below mockup data
     const props = [
         {
-            headline:"My Cacti Growing Operation",
-            description:"A photoessay detailing my cacti collection and my motivations behind it.",
+            headline:"Gardening pt 1",
+            description:"A photoessay detailing my garden",
             thumbnail:"https://picsum.photos/100/100",
             date:"Jan 31 2022"
         },
@@ -24,8 +24,8 @@ const Postcards = () => {
             date:"Jan 31 2022"
         },
         {
-            headline:"My Cacti Growing Operation",
-            description:"A photoessay detailing my cacti collection and my motivations behind it.",
+            headline:"Gardening pt 1",
+            description:"A photoessay detailing my garden",
             thumbnail:"https://picsum.photos/100/100",
             date:"Jan 31 2022"
         },
