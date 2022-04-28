@@ -46,23 +46,20 @@ const Postcards = () => {
     return props.map((postcard) => {
         return (
             <>
-                <Card 
-                className="postcards"
+                <Card
+                    className="postcards"
                 >
                     <Card.Body className='body'>
                         <div className="text">
                             <Card.Title>{postcard.headline}</Card.Title>
                             <Card.Text className='date'>{postcard.date}</Card.Text>
                             <Card.Text>{postcard.description}</Card.Text>
-                        </div>  
-                        <Card.Img className='card_img' src={postcard.thumbnail}/>     
+                        </div>
+                        <Card.Img className='card_img' src={postcard.thumbnail} />
                     </Card.Body>
-
                 </Card>
-                
-                <hr className="postcard_divider"/>
+                <hr className="postcard_divider" />
             </>
-
         )
     });
     
