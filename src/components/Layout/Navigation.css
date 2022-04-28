@@ -4,10 +4,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    border-right: 1px solid rgba(121, 121, 121, 0.5);
+    height: 100%;
+    position: fixed;
+    width: 25%;
 }
 
 .nav_item {
     min-width: 200px;
+    font-weight: bolder;
+    font-size: 18pt;
 }
 
 

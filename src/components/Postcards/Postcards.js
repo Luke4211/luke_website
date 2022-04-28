@@ -22,6 +22,24 @@ const Postcards = () => {
             description:"A photoessay detailing how to trim hooper's nails.",
             thumbnail:"https://picsum.photos/100/100",
             date:"Jan 31 2022"
+        },
+        {
+            headline:"My Cacti Growing Operation",
+            description:"A photoessay detailing my cacti collection and my motivations behind it.",
+            thumbnail:"https://picsum.photos/100/100",
+            date:"Jan 31 2022"
+        },
+        {
+            headline:"Hooper Marie",
+            description:"A photoessay detailing my Hooper Marie and my motivations behind it.",
+            thumbnail:"https://picsum.photos/100/100",
+            date:"Jan 31 2022"
+        },
+        {
+            headline:"How to trim Hoopers nails",
+            description:"A photoessay detailing how to trim hooper's nails.",
+            thumbnail:"https://picsum.photos/100/100",
+            date:"Jan 31 2022"
         }
 
     ]
