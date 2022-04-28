@@ -1,6 +1,6 @@
 import React from 'react';
-import Postcards from '../Postcards/Postcards';
-import Navigation from '../Layout/Navigation';
+import Postcards from '../../Postcards/Postcards';
+import Navigation from '../Navigation';
 import './LargeView.css'
 
 const LargeView = () => {

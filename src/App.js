@@ -1,14 +1,9 @@
 import React, { Component, useState, useEffect } from 'react';
 import './App.css';
-//import Layout from './components/Layout';
-import Header from './components/Layout/Header';
-import Postcards from './components/Postcards/Postcards';
-import Navigation from './components/Layout/Navigation';
-import Card from 'react-bootstrap/Card'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import LargeView from './components/LargeView/LargeView';
+import LargeView from './components/Layout/LargeView/LargeView';
 
-function App() {
+const App = () => {
 
   const [isLarge, setLarge] = useState(window.innerWidth > 650);
 
