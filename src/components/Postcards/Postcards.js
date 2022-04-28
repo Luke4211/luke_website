@@ -8,19 +8,19 @@ const Postcards = () => {
         {
             headline:"My Cacti Growing Operation",
             description:"A photoessay detailing my cacti collection and my motivations behind it.",
-            thumbnail:"https://picsum.photos/200/100",
+            thumbnail:"https://picsum.photos/100/100",
             date:"Jan 31 2022"
         },
         {
             headline:"Hooper Marie",
             description:"A photoessay detailing my Hooper Marie and my motivations behind it.",
-            thumbnail:"https://picsum.photos/200/100",
+            thumbnail:"https://picsum.photos/100/100",
             date:"Jan 31 2022"
         },
         {
-            headline:"How to take a fat Dab",
-            description:"A photoessay detailing my fat dab and my motivations behind it.",
-            thumbnail:"https://picsum.photos/200/100",
+            headline:"How to trim Hoopers nails",
+            description:"A photoessay detailing how to trim hooper's nails.",
+            thumbnail:"https://picsum.photos/100/100",
             date:"Jan 31 2022"
         }
 
@@ -31,18 +31,23 @@ const Postcards = () => {
                 <Card 
                 className="postcards"
                 >
-                    <Card.Body>
+                    <Card.Body className='body'>
+                        <div className="text">
                         <Card.Title>{postcard.headline}</Card.Title>
                         <Card.Text className='date'>{postcard.date}</Card.Text>
-                        <Card.Img className='card_img'variant='bottom' src={postcard.thumbnail}/>
-                        
-                            
                         <Card.Text>{postcard.description}</Card.Text>
+
+                        </div>
+                        
+                        <Card.Img className='card_img' src={postcard.thumbnail}/>
+                        
+                        
                         
                     </Card.Body>
 
                 </Card>
-                <hr/>
+                <br/>
+                {/*<hr/>*/}
             </>
 
         )

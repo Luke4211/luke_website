@@ -9,8 +9,19 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div>
-      <Postcards/>  
+    <div style={{  
+      display: "grid",  
+      gridTemplateColumns: "1fr 2fr 1fr"  
+    }} 
+    >
+      <div>
+        <Navigation/>
+      </div>
+
+      <div>
+        <Postcards/>  
+      </div>
+      
     </div>
     
 
