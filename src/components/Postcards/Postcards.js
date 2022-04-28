@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import './Postcards.css'
 
 const Postcards = () => {
-
+    //TODO: Add props to function parameters, remove below mockup data
     const props = [
         {
             headline:"My Cacti Growing Operation",
@@ -33,16 +33,11 @@ const Postcards = () => {
                 >
                     <Card.Body className='body'>
                         <div className="text">
-                        <Card.Title>{postcard.headline}</Card.Title>
-                        <Card.Text className='date'>{postcard.date}</Card.Text>
-                        <Card.Text>{postcard.description}</Card.Text>
-
-                        </div>
-                        
-                        <Card.Img className='card_img' src={postcard.thumbnail}/>
-                        
-                        
-                        
+                            <Card.Title>{postcard.headline}</Card.Title>
+                            <Card.Text className='date'>{postcard.date}</Card.Text>
+                            <Card.Text>{postcard.description}</Card.Text>
+                        </div>  
+                        <Card.Img className='card_img' src={postcard.thumbnail}/>     
                     </Card.Body>
 
                 </Card>
