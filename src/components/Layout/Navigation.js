@@ -1,15 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './Navigation.css';
+import Nav from 'react-bootstrap/Nav';
  
 const Navigation = () => {
     return (
-        <nav className="col-md-2">
-        	<ul>
-				<li><div className="sidebar_item"><Link to={'/'}>List All Posts</Link></div></li>
-            	<li><div className="sidebar_item" ><Link to={'/create'}>Add New Post</Link></div></li>
-            </ul>
-        </nav>
+        <Nav defaultActiveKey="/" className="flex_column">
+            <Nav.Link href="/">Active</Nav.Link>
+
+
+        </Nav>
      );
 }
  
