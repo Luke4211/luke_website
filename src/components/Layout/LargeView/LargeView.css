@@ -1,5 +1,0 @@
-.large_screen_container {
-    display: grid;  
-    grid-template-columns: 1fr 2fr 1fr;
-    height: 100%;
-  }

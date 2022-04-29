@@ -1,11 +1,14 @@
 import React from 'react';
-import Postcards from '../../Postcards/Postcards';
-import Navigation from '../Navigation';
-import './LargeView.css'
+import Postcards from '../Postcards/Postcards';
+import Navigation from './Navigation';
 
 const LargeView = () => {
     return (
-        <div className='large_screen_container'>
+        <div style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 2fr 1fr",
+            height: "100%"
+        }}>
             <div>
                 <Navigation />
             </div>

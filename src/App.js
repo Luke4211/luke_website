@@ -1,7 +1,8 @@
 import React, { Component, useState, useEffect } from 'react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import LargeView from './components/Layout/LargeView/LargeView';
+import LargeView from './components/Layout/LargeView';
+import SmallView from './components/Layout/SmallView';
 
 const App = () => {
 
@@ -23,7 +24,7 @@ const App = () => {
         <LargeView/>
 
       ) : (
-        <p>I'm mobile</p>
+        <SmallView/>
       )}
       
     </div>
