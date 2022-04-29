@@ -1,7 +1,7 @@
 import React from 'react';
 import { getOverlayDirection } from 'react-bootstrap/esm/helpers';
 import Postcards from '../Postcards/Postcards';
-import Navigation from './Navigation';
+import BottomBar from './BottomBar';
 
 const SmallView = () => {
     return (
@@ -29,7 +29,7 @@ const SmallView = () => {
                 boxShadow: "3px 0px 7px 2px rgba(121, 121, 121, .2)",
                 zIndex:"1"
             }}>
-                Bottom Panel
+                <BottomBar/>
             </div>
         </div>
     )
