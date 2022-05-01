@@ -12,8 +12,8 @@ const BottomBar = () => {
         <div className="icon_container">
 
             <div className="icons">
-                <img src={HomeIcon} alt="Home" onClick={iconClick} />
-                <img src={SearchIcon} alt="Home" onClick={iconClick} />
+                <img className="icon" src={HomeIcon} alt="Home" onClick={iconClick} />
+                <img className="icon" src={SearchIcon} alt="Home" onClick={iconClick} />
             </div>
         </div>
     )

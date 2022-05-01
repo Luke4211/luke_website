@@ -1,5 +1,4 @@
 import React from 'react';
-import { getOverlayDirection } from 'react-bootstrap/esm/helpers';
 import Postcards from '../Postcards/Postcards';
 import BottomBar from './BottomBar';
 
