@@ -2,7 +2,7 @@ import React from 'react';
 import Postcards from '../Postcards/Postcards';
 import BottomBar from './BottomBar';
 
-const SmallView = () => {
+const SmallView = ({onFetchPosts}) => {
     return (
         <div style={{
             overflowY:"scroll"
@@ -25,7 +25,7 @@ const SmallView = () => {
                 marginBottom: "70px",
                 zIndex: "0"
             }}>
-                <Postcards/>
+                <Postcards onFetchPosts={onFetchPosts} />
             </div>
 
             <div style={{

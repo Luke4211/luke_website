@@ -2,7 +2,7 @@ import React from 'react';
 import Postcards from '../Postcards/Postcards';
 import Navigation from './Navigation';
 
-const LargeView = () => {
+const LargeView = ({onFetchPosts}) => {
     return (
         <div style={{
             display: "grid",
@@ -15,7 +15,7 @@ const LargeView = () => {
 
             <div >
 
-                <Postcards />
+                <Postcards onFetchPosts={onFetchPosts} />
             </div>
 
             <div>
