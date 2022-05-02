@@ -25,6 +25,7 @@ const App = () => {
 
       querySnapshot.docs.map((doc) => {
         rtn.push({
+          id: doc.id,
           headline: doc.get("headline"),
           description: doc.get("description"),
           thumbnail: doc.get("thumbnail"),
