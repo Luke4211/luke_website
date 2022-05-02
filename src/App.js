@@ -21,20 +21,8 @@ const App = () => {
   async function handleFetchPosts() {
     try {
       const querySnapshot = await getDocs(q);
-      const rtn = [];
 
-      querySnapshot.docs.map((doc) => {
-        rtn.push({
-          id: doc.id,
-          headline: doc.get("headline"),
-          description: doc.get("description"),
-          thumbnail: doc.get("thumbnail"),
-          date: (doc.get("date").toDate()).toDateString()
-
-        });
-      })
-
-      return rtn;
+      return querySnapshot;
 
     } catch (e) {
       console.log(e);
@@ -49,10 +37,13 @@ const App = () => {
   });
 
   return (
-    <div>
+    <div >
       {isLarge ? (
-        <LargeView onFetchPosts={handleFetchPosts} />
-
+        <div style={{
+          height: "auto"
+        }}>
+          <LargeView onFetchPosts={handleFetchPosts} />
+        </div>
       ) : (
         <SmallView onFetchPosts={handleFetchPosts} />
       )}

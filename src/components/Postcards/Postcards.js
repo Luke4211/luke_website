@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import './Postcards.css'
 import { useState } from 'react';
+import AboutPanel from '../Layout/AboutPanel';
 
 
 
@@ -29,26 +30,25 @@ const Postcards =  ({onFetchPosts}) => {
 
     }, []);
 
-
-
     return (
         <div>
+
             {havePosts ? (
-                posts.map((postcard) => {
+                posts.docs.map((postcard) => {
                     return (
                         <div
-                        key={postcard.id}                       
+                            key={postcard.id}
                         >
                             <Card
                                 className="postcards"
                             >
                                 <Card.Body className='body'>
                                     <div className="text">
-                                        <Card.Title>{postcard.headline}</Card.Title>
-                                        <Card.Text className='date'>{postcard.date}</Card.Text>
-                                        <Card.Text>{postcard.description}</Card.Text>
+                                        <Card.Title>{postcard.get("headline")}</Card.Title>
+                                        <Card.Text className='date'>{(postcard.get("date").toDate()).toDateString()}</Card.Text>
+                                        <Card.Text>{postcard.get("description")}</Card.Text>
                                     </div>
-                                    <Card.Img className='card_img' src={postcard.thumbnail} />
+                                    <Card.Img className='card_img' src={postcard.get("thumbnail")} />
                                 </Card.Body>
                             </Card>
                             <hr className="postcard_divider" />
@@ -58,9 +58,9 @@ const Postcards =  ({onFetchPosts}) => {
                 })
 
             ) : (
-                <p>no posts</p>
-
+                <div />
             )}
+
         </div>
     )
     
