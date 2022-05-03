@@ -30,3 +30,13 @@
 img {
     height: 100%;
 }
+
+.home_button {
+    background-image: url('../../assets/home.png') ;
+
+}
+
+.search_button {
+    background-image: url('../../assets/search.png') ;
+
+}
