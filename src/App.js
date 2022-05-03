@@ -9,10 +9,10 @@ import db from './firebase'
 
 const App = () => {
 
-  const [isLarge, setLarge] = useState(window.innerWidth > 650);
+  const [isLarge, setLarge] = useState(window.innerWidth > 1080);
 
   const updateDisplayMode = () => {
-    setLarge(window.innerWidth > 650);
+    setLarge(window.innerWidth > 1080);
 
   };
 

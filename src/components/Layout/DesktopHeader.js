@@ -4,8 +4,15 @@ import './DesktopHeader.css';
 const DesktopHeader = () => {
     return (
         <div className="desk_header_container" >
-            hi
-            <div className="desk_header_border" />
+            <div className="desk_header_text">
+
+               
+
+            </div>
+            
+            <div className="desk_header_border">
+                <strong>Posts by Lucas Gorski</strong>
+            </div>
         </div>
     )
 }

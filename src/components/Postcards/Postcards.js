@@ -42,13 +42,13 @@ const Postcards =  ({onFetchPosts}) => {
                             <Card
                                 className="postcards"
                             >
-                                <Card.Body className='body'>
-                                    <div className="text">
+                                <Card.Body className='postcard_body'>
+                                    <div className="postcard_text">
                                         <Card.Title>{postcard.get("headline")}</Card.Title>
-                                        <Card.Text className='date'>{(postcard.get("date").toDate()).toDateString()}</Card.Text>
+                                        <Card.Text className='postcard_date'>{(postcard.get("date").toDate()).toDateString()}</Card.Text>
                                         <Card.Text>{postcard.get("description")}</Card.Text>
                                     </div>
-                                    <Card.Img className='card_img' src={postcard.get("thumbnail")} />
+                                    <Card.Img className='postcard_img' src={postcard.get("thumbnail")} />
                                 </Card.Body>
                             </Card>
                             <hr className="postcard_divider" />

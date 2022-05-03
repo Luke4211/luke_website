@@ -35,7 +35,7 @@ const LargeView = ({onFetchPosts}) => {
                 
 
                 <div style={{
-                    marginTop: "30px",
+                    marginTop: "170px",
                     height: "100vh",
                     zIndex: "0"
                 }}>
