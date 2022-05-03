@@ -2,5 +2,22 @@
     border-left: 1px solid rgba(121, 121, 121, 0.5);
     height: 100%;
     position: fixed;
-    top: 0;
+}
+
+.about_img {
+    position: fixed;
+    top: 23vh;
+    margin-left: 30px;
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+    
+}
+
+.about_name {
+    position: fixed;
+    top: calc(23vh + 100px);
+    padding-top: 10px;
+    margin-left: 30px;
+    font-size: 13pt;
 }
